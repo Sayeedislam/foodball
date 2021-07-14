@@ -1,0 +1,270 @@
+/* ------------------
+common style start
+------------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,p{
+    margin:0;
+}
+.container{
+    margin:auto;
+    width:1168px;
+}
+/*-------------------
+ common style end!!!
+------------------ */
+
+/*-----------------------
+top section start
+---------------------- */
+
+.title-banner-container{
+    background: #2D25A0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding:50px;
+}
+.title-div{
+    margin-right:50px;
+width:485px;
+}
+.title-text{
+    font-size:64px;
+}
+.btn{
+    display:flex;
+    align-items:center;
+    width: 130px;
+    height: 44px;
+    margin-top:27px;
+    background:none;
+    color:white;
+    border:none;
+    border:1px solid white;
+}
+.btn:hover{
+    background-color:#E02C6D;
+    border:1px solid #E02C6D;
+    color:white;
+    cursor:pointer;
+    
+
+}
+.end-btn{
+    color:black;
+    border:1px solid black;
+}
+.btn span{
+    font-size:16px;
+}
+.btn-icon{
+    margin: 2px 0 0 9px;
+    font-size:21px;
+}
+.banner-div{
+width:556px;
+transition:transform 1.5s;
+}
+.banner-div:hover{
+    transform:scale(1.1);
+}
+
+.banner-div img{
+max-width:100%;
+}
+/*------------------
+   top section end!!!!
+  -------------------- */
+
+
+  /*---------------------
+  player details start
+  ---------------------- */
+.players-gallary{
+    padding-left: 25px;
+    margin-top:70px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:45px;
+}
+.player{
+ Width:330px;
+ height:456px;
+ background:#faf7f7;
+ box-shadow: 0px 2px 12px 1px;
+}
+.player-container{
+    padding:15px;
+    width:300px;
+    height:426px;
+}
+.player-img img{
+    width:300px;
+    height:256px;
+}
+.player-details{
+    padding-top:16px;
+}
+.player-nam{
+font-size:28px;
+font-weight:700;
+}
+.player-dtil{
+    font-family: 'Poppins', sans-serif;
+font-size:16px;
+padding-top:10px;
+font-weight:400;
+line-height:26px;
+}
+/*--------------------
+ player deatils end!!!!
+ ----------------------- */
+
+
+/*-----------------------
+ highlite divition start
+ ------------------- */
+.highlite-container{
+display:flex;
+padding:158px 10px 158px 10px;
+}
+.lastcont{
+    margin-top: -170px;
+}
+.highlite{
+width:469px;
+}
+.highlite h2{
+    font-size:48px;
+    padding-bottom:8px;
+}
+.highlite p{
+    line-height:28px;
+}
+.highlite-img{
+   width:567px; 
+   margin-left:66px;
+}
+.highlite-img img{
+    width:100%;
+}
+/*---------------------------
+ highlite divition end!!!!
+ ------------------------------- */
+
+
+/*----------------
+ footer degin start
+ -------------------*/
+.footer-container{
+  width:485px;
+  margin:auto;
+}
+.footer-logo-div img{
+    width:483px;
+    height:110px;
+}
+.footer-icon-div{
+display:flex;
+justify-content:center;
+margin:20px 0 20px 0;
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    background: #808080a8;
+    border-radius: 50%;
+    margin-right:14px;
+}
+.footer-dd{
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 3px;
+    left: 8px;
+}
+.footer-copywrit-div{
+    text-align:center;
+}
+/*-------------------
+  footer style end!!!
+---------------------------*/
+
+
+
+
+/*----------------
+ media quarey 
+ ---------------------*/
+/*-----------------
+----------------------
+Mobile devices
+------------------
+-------------------*/
+@media only screen and (max-width:688px) {
+  .container,.title-div,.banner-div,.player-container,.players-gallary,.highlite,.highlite-img,.footer-container{
+      width:100%;
+  }
+  .title-banner-container,.players-gallary,.highlite-container{
+      flex-direction: column;
+      grid-template-columns: repeat(1,1fr);
+  }
+.players-gallary{
+    align-items:center;
+}
+  .player{
+      display:flex;
+  }
+  .banner-div{
+      margin-top:50px;
+  }
+  .highlite-container{
+      align-items:center;
+      padding:58px;
+  }
+.lastcont{
+    margin-top:-70px;
+}
+  .highlite-img{
+      margin-left:0px;
+      margin-top:29px;
+  }
+  .footer-logo-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+}
+/* ---------------
+tablet device
+----------------- */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width:100%;
+    }
+        .title-banner-container,.players-gallary,.highlite-container{
+            flex-direction: column;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .banner-div{
+            margin-top:50px;
+        }
+        .highlite-container{
+            justify-content:center;
+            padding:58px;
+        }
+        .highlite-img{
+            margin-left:0px;
+            margin-top:29px;
+        }
+        .lastcont{
+            margin-top:-70px;
+        }
+    }
+    
+
+/* style end!!!!! */
